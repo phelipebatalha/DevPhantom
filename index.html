@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevPhantom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+      <div class="container-fluid col-11 m-auto">
+        <a class="navbar-brand" href="./index.html">DevPhantom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content">Content</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">VFX / Shader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div id="carouselExampleIndicators" class="carousel slide "  data-bs-ride="carousel">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: rgb(0, 255, 64);"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: rgb(0, 255, 64);"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: rgb(0, 255, 64);"></button>
+      </div>
+      <div class="carousel-inner" style="height: 20em;">
+        <div class="carousel-item h-100 active" style="background-image: url(imagens/Eu.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        </div>
+        <div class="carousel-item h-100" style="background-image: url(imagens/Videogame.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        
+        </div>
+        <div class="carousel-item h-100" style="background-image: url(imagens/VFX.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+        <i class="fa-solid fa-angle-right fa-flip-horizontal fa-2xl" style="color: #00ff11;"></i>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <i class="fa-solid fa-angle-left fa-flip-horizontal fa-2xl" style="color: #00ff11;"></i>
+      </button>
+    </div>  
+    <br> 
+    <h2 class= "text-center">Content</h2>
+    <br>
+    <div id="content" class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
+      <div class="col">
+        <div class="card h-100" style="background-size: cover;">
+          <img src="./imagens/DennyPaper.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Resume</h5>
+            <p class="card-text text-center">I am a Game Developer student at PUC Minas Universidade Católica de Minas Gerais. I seek to transmit the message that games have proposed to me throughout my life from my own eyes.</p>
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                See more
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Resume</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./imagens/Perfil.jpg" height="100" width="110">
+                      <h2>Summary</h2>
+                      <p>
+                          I am a Game Developer student at PUC Minas Universidade Católica de Minas Gerais. 
+                        I seek to transmit the message that games have proposed to me throughout my life 
+                        from my own eyes. I produce games and other ideas for academic and personal projects 
+                        through code and design. I am extremely rigorous with my work and in the process of 
+                        pursuing an academic degree in game development, focusing on Veffects, writing, 
+                        and code.
+                      </p>
+                      <hr />
+                      <h2>Education</h2>
+                      <p>            
+                          Game Development Student at PUC Minas
+                      </p>
+                      <hr />
+                      <h2>Work Experience</h2>
+                      <p>
+                          <ul>
+                              <li><h3>English Teacher - Kidsa</h3></li><img src = "./imagens/Kidsa.png" height="40"/>
+                              <br />
+                              August 2021 - January 2022
+                              <p>
+                                  <ul><li>Become a English Teacher at a samll Startup in Brazil
+                                      witch developed innovative teaching methodologies during 
+                                      the pandemic.
+                                  </li></ul>
+                              </p>                    
+                              <li><h3>Programming Instructor - Code Buddy</h3></li> <img src = "./imagens/CodeBuddy.png" height="40"/>
+                              <br />
+                              April 2023 - October 2023
+                              <p>
+                                  <ul><li>In early 2023, I became a Programming Instructor for kids
+                                      and teenagers in Code Buddy, where I learned about different
+                                      game, programming and teaching tools, including: Scratch, Kodu,
+                                      Construct 3, Game Maker, Unity, Figma, Tinkercard and others.
+                                  </li></ul>
+                              </p>
+                          </ul>
+                      </p>
+                      <hr />
+                      <h2>Skills</h2>
+                      <ul>
+                          <li>Programming: ⭐️⭐️⭐️⭐️⭐️</li>
+                          <li>English: ⭐️⭐️⭐️⭐️⭐️</li>
+                          <li>Scratch, Construct, Game Maker, Kodu: ⭐️⭐️⭐️⭐️⭐️</li>
+                          <li>Blender: ⭐️⭐️⭐️⭐️</li>
+                      </ul> 
+                      <hr />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagens/School.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Portfolio</h5>
+            <p class="card-text text-center">Veja todas minhas Criações</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              See more
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Target</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="./Portfolio.html">VFX Portfolio</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagens/DennyDoubleBiceps.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Personal</h5>
+            <p class="card-text text-center">I realy love videogames since I was a child. In the beginning my father always try to make me play all types of games that he knew and I enjoyed a lot every single time.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              See more
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Personal</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      I realy love video games since I was a child. In the beginning my father always
+                      try to make me play all types of games that he knew and I enjoyed a lot every
+                      single time. During my school I used to play a big number of games and sports,
+                      but I found my passion in competitive games, specially in Riot Games. Therefore,
+                      when I entered in the college I had the opportunity to be a player for a college
+                      team, called KPPT's E-sports and I almost became a professional player, but the
+                      time had special plans to me.
+                  </p>
+                  <p>
+                      Faster than I thought, I started to love programming and developing Games. I became a
+                      Game Dev Student in a big college (PUC Minas) and had to leave the team. Isn't that
+                      bad if you look to my life at all. Doors started to opening to me and I could see a
+                      lot of other experiences in Game Development area.
+                  </p>
+                  <p>
+                      Other thing that I started to see with other eyes is Sports and Gym exercises. When I
+                      was young I used to play a lot of sports like: football, basketball and volleyball. So
+                      I always like to play and watch sports as well. But, my love of the eyes appeared in 2021
+                      when I could go to a gym for the first time. I fell in love at first sight. I started to
+                      train and became a fan of sport. Today, exercises help me think and control my emotions 
+                      better, so I can work and focus more.
+                  </p>
+                  <p>
+                      In conclusion, we can say that I'm a sport and game enthusiastic with a lot of Gym and
+                      e-sports experience. If you identify with me, feel free to send me a message: <a href="https://wa.me/+5531975433222">Contact</a>.
+                      I always answering doubts and suggestions!
+                  </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-11 m-auto">
+      <hr>
+      <h1 class="text-center">Summary</h1>
+      <p class="text-center">
+        I am a Unity game developer and nearly a full-stack web developer, currently completing a course by Dr. Angela Yu. I bring valuable experience in collaborating with agile and multicultural teams, adhering to scrum methodologies. My focus and persistence in solving logical problems are evident through my involvement in diverse projects, consistently meeting guidelines within tight deadlines.
+      </p>
+      <p class="text-center">
+        My ability to communicate effectively with people of different backgrounds is complemented by my educational and practical experience with the English language, including teaching. Throughout my journey, I've gained proficiency in various tools and technologies, with my favorites being:
+      </p>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">C#</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Unity</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">C</li>
+    </ul>
+    <ul class="list-group list-group-horizontal-sm">
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">HTML</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">CSS</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(109, 110, 0);">JS</li>
+    </ul>
+    <ul class="list-group list-group-horizontal-md">
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Bootstrap</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(94, 11, 0);">Ruby </li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(94, 11, 0);">Python</li>
+    </ul>
+    <p class="text-center">
+      Presently, I am dedicating my time to enhance my skills in C# + Unity, JavaScript, VFX/ Shader for Games and staying abreast of emerging technologies to contribute as a dynamic developer. I am open to new opportunities and actively seeking ways to add value to companies. If you are seeking a dedicated programmer to drive your project forward, please feel free to connect. I would be delighted to learn more about your ideas.
+      At this point I can say that I have proficiency skills in:
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">VFX</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Shader</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Character Creation</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Blender</li>
+      <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">ZBrush</li>
+      <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Photoshop</li>
+  </ul>
+    </p>
+    <hr>
+    </div>
+    <div id="contact" class="col-11 m-auto">
+      <h2 class="text-center">Contact</h2>
+      <div class="m-auto text-center" style="width: 150px;">
+        <a href="https://www.linkedin.com/in/phelipebatalha/">
+          <i class="fa-brands fa-linkedin" style="font-size: 50px;"></i>
+        </a>
+        &nbsp;
+        <a href="https://wa.me/+5531975433222">
+          <i class="fab fa-whatsapp" style="font-size: 50px; color: green"></i>
+        </a>
+      </div>
+      <br>
+    </div>
+    <footer style="background-color: rgb(0, 119, 83);" class="page-footer font-small blue p-5">
+      <div class="text-center">
+        <a href="https://www.linkedin.com/in/phelipebatalha/">2024 Copyright Phelipe Henrique</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </body>
+</html>
