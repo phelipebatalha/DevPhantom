@@ -35,20 +35,24 @@
       </div>
     </nav>
   
-    <div id="carouselExampleIndicators" class="carousel slide "  data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide "  data-bs-ride="carousel"> <!-- Carrossel-->
       <div class="carousel-indicators ">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: rgb(0, 255, 64);"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: rgb(0, 255, 64);"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: rgb(0, 255, 64);"></button>
       </div>
-      <div class="carousel-inner" style="height: 40em;">
-        <div class="carousel-item h-100 active" style="background-image: url(imagens/CatVFX\ \(2\).png); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        </div>
-        <div class="carousel-item h-100" style="background-image: url(imagens/CatGames.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        
-        </div>
-        <div class="carousel-item h-100" style="background-image: url(imagens/CatProjects.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class="carousel-inner" style=>
 
+        <div class="carousel-item active">
+          <img src="./imagens/GameProd.png" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="./imagens/VFX .png" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="./imagens/PROJECT.png" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
@@ -60,7 +64,7 @@
     <br> 
     <h2 class= "text-center">Content</h2>
     <br>
-    <div id="content" class="row row-cols-1 row-cols-md-3 g-4 col-10 m-auto">
+    <div id="content" class="row row-cols-1 row-cols-md-3 g-4 col-10 m-auto"> <!-- Cards-->
       <div class="col">
         <div class="card h-100" style="background-size: cover;">
           <img src="./imagens/EuDisney.jpg" class="card-img-top" alt="..." style="height: 35em;">
@@ -124,10 +128,10 @@
                       <hr />
                       <h2>Skills</h2>
                       <ul>
-                          <li>Programming: ⭐️⭐️⭐️⭐️⭐️</li>
-                          <li>English: ⭐️⭐️⭐️⭐️⭐️</li>
-                          <li>Scratch, Construct, Game Maker, Kodu: ⭐️⭐️⭐️⭐️⭐️</li>
-                          <li>Blender: ⭐️⭐️⭐️⭐️</li>
+                          <li>Programming</li>
+                          <li>English</li>
+                          <li>Scratch, Construct, Game Maker, Kodu</li>
+                          <li>3D Model</li>
                       </ul> 
                       <hr />
                     </div>
@@ -231,7 +235,7 @@
       </div>
     </div>
 
-    <div class="col-11 m-auto">
+    <div class="col-11 m-auto"> <!-- Summary Text-->
       <hr>
       <h1 class="text-center">Summary</h1>
       <p class="text-center">
@@ -248,12 +252,12 @@
     <ul class="list-group list-group-horizontal-sm">
         <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">HTML</li>
         <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">CSS</li>
-        <li class="list-group-item flex-fill" style="background-color: rgb(109, 110, 0);">JS</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">JS</li>
     </ul>
     <ul class="list-group list-group-horizontal-md">
         <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Bootstrap</li>
-        <li class="list-group-item flex-fill" style="background-color: rgb(94, 11, 0);">Ruby </li>
-        <li class="list-group-item flex-fill" style="background-color: rgb(94, 11, 0);">Python</li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Ruby </li>
+        <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Python</li>
     </ul>
     <p class="text-center">
       Presently, I am dedicating my time to enhance my skills in C# + Unity, JavaScript, VFX/ Shader for Games and staying abreast of emerging technologies to contribute as a dynamic developer. I am open to new opportunities and actively seeking ways to add value to companies. If you are seeking a dedicated programmer to drive your project forward, please feel free to connect. I would be delighted to learn more about your ideas.
@@ -269,17 +273,20 @@
       <li class="list-group-item flex-fill" style="background-color: rgb(34, 56, 0);">Photoshop</li>
   </ul>
     </p>
+    <p class="text-center">
+      At this point I'm focossing on my formation in full stack web and Game Visual Effects industry to increase my knowledge and experience.
+    </p>
     <hr>
     </div>
-    <div id="contact" class="col-11 m-auto">
+    <div id="contact" class="col-11 m-auto"> <!-- Contacts -->
       <h2 class="text-center">Contact</h2>
       <div class="m-auto text-center" style="width: 150px;">
         <a href="https://www.linkedin.com/in/phelipebatalha/">
           <i class="fa-brands fa-linkedin" style="font-size: 50px;"></i>
         </a>
         &nbsp;
-        <a href="https://wa.me/+5531975433222">
-          <i class="fab fa-whatsapp" style="font-size: 50px; color: green"></i>
+        <a href="mailto:phelipebatalha@hotmail.com" style="width: 150px;">
+          <i class="fa-solid fa-envelope" style="font-size: 50px;"></i>
         </a>
       </div>
       <br>
