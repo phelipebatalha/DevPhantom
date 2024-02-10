@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DevPhan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_index.css">
   </head>
   <body>
     <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
@@ -36,7 +37,7 @@
     </nav>
   
     <div id="carouselExampleIndicators" class="carousel slide "  data-bs-ride="carousel"> <!-- Carrossel-->
-      <div class="carousel-indicators ">
+      <div id="content" class="carousel-indicators ">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: rgb(0, 255, 64);"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: rgb(0, 255, 64);"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: rgb(0, 255, 64);"></button>
@@ -60,13 +61,13 @@
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <i class="fa-solid fa-angle-left fa-flip-horizontal fa-2xl" style="color: #00ff11;"></i>
       </button>
-    </div>  
+    </div>
     <br> 
     <h2 class= "text-center">Content</h2>
     <br>
-    <div id="content" class="row row-cols-1 row-cols-md-3 g-4 col-8 m-auto"> <!-- Cards-->
+    <div class="row row-cols-1 row-cols-md-3 g-4 col-8 m-auto"> <!-- Cards-->
       <div class="col">
-        <div class="card h-70" style="background-size: cover; height: 32em; width: 20em;">
+        <div class="card h-70 card-esquerda" style="background-size: cover; height: 32em; width: 20em;">
           <img src="./imagens/CurriculoBase.png" class="card-img-top" alt="..." style="height: 15em;">
           <div class="card-body">
             <h5 class="card-title text-center">Resume</h5>
@@ -149,7 +150,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-70" style="height: 32em; width: 20em;">
+        <div class="card h-70 card-centro" style="height: 32em; width: 20em;">
           <img src="./imagens/PortfolioBase.png" class="card-img-top" alt="..." style="height: 15em;">
           <div class="card-body">
             <h5 class="card-title text-center">Portfolio</h5>
@@ -187,7 +188,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-70" style="height: 32em; width: 20em;">
+        <div class="card h-70 card-direita" style="height: 32em; width: 20em;">
           <img src="./imagens/PersonalBase.png" class="card-img-top" alt="..." style="height: 15em;">
           <div class="card-body">
             <h5 class="card-title text-center">Personal</h5>
@@ -235,7 +236,7 @@
                   </p>
                   <p>
                       In conclusion, we can say that I'm a sport and game enthusiastic with a lot of Gym and
-                      e-sports experience. If you identify with me, feel free to send me a message: <a href="https://wa.me/+5531975433222">Contact</a>.
+                      e-sports experience. If you identify with me, feel free to send me a message: <a href="https://wa.me/+5531975433222" target=”_blank”>Contact</a>.
                       I always answering doubts and suggestions!
                   </p>
                   </div>
@@ -296,11 +297,11 @@
     <div id="contact" class="col-11 m-auto"> <!-- Contacts -->
       <h2 class="text-center">Contact</h2>
       <div class="m-auto text-center" style="width: 150px;">
-        <a href="https://www.linkedin.com/in/phelipebatalha/">
+        <a href="https://www.linkedin.com/in/phelipebatalha/" target=”_blank”>
           <i class="fa-brands fa-linkedin" style="font-size: 50px;"></i>
         </a>
         &nbsp;
-        <a href="mailto:phelipebatalha@hotmail.com" style="width: 150px;">
+        <a href="mailto:phelipebatalha@hotmail.com" target=”_blank” style="width: 150px;">
           <i class="fa-solid fa-envelope" style="font-size: 50px;"></i>
         </a>
       </div>
@@ -308,7 +309,7 @@
     </div>
     <footer style="background-color: rgb(0, 119, 83);" class="page-footer font-small blue p-1">
       <div class="text-center">
-        <a href="https://www.linkedin.com/in/phelipebatalha/">2024 Copyright Phelipe Henrique</a>
+        <a href="https://www.linkedin.com/in/phelipebatalha/" target=”_blank”>2024 Copyright Phelipe Henrique</a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

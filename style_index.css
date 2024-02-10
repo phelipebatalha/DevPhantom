@@ -1,0 +1,53 @@
+
+.card-esquerda{
+
+    animation: appear_esquerda 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.card-direita{
+    animation: appear_direita 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.card-centro{
+    animation: reveal 3s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+@keyframes appear_esquerda{
+    from {
+        opacity: 0;
+        translate: -50vw 0;
+    }
+    
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes appear_direita{
+    from {
+        opacity: 0;
+        translate: 50vw 0;
+    }
+    
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clipt-path: insert(100% 20% 100% 20%);
+
+    }
+    to{
+        opacity: 1;
+        clip-path: insert(0% 0% 0% 0%);
+    }
+}
