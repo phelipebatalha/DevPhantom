@@ -1,16 +1,11 @@
 
-.card-esquerda{
+.card-appear{
 
     animation: appear_esquerda 5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
 }
-.card-direita{
-    animation: appear_direita 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-}
-.card-centro{
+.card-review{
     animation: reveal 3s ease-in-out both;
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
