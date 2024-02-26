@@ -1,29 +1,33 @@
-
 section{
+
     font-size: 1.5rem;
+
     margin-inline:auto;
+
     width: min(60ch,100%);
+
 }
+
+
 
 #tela2{
+
     margin-bottom: 15vh;
-}
-#tela1{
-    margin-top: 25vh;
+
 }
 
-h2{
+#tela1{
+
+    margin-top: 25vh;
+
+}
+
+.reveal{
     animation: reveal 5s ease-in-out both;
     animation-range: entry 25% cover 50%;
 }
 
-body{
-    background-image: url(imagens/Fundo.png);
-    background-repeat: repeat;
-    
-}
-
-.card{
+.cardappear{
     animation: appear 5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
