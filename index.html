@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DevPhan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style_index.css">
+    <style>
+      /* Estilos personalizados para os Swiper_cards */
+      .Swiper_card {
+        background-color: #222;
+        border: 1px solid #444;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .Swiper_card img {
+        height: 15em;
+        object-fit: cover;
+      }
+
+      .Swiper_card-body {
+        padding: 15px;
+        text-align: center;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: rgb(0, 255, 64);
+      }
+
+      .swiper-button-prev, .swiper-button-next {
+        color: #00ff11;
+      }
+    </style>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Navbar -->
     <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
       <div class="container-fluid col-11 m-auto">
         <a class="navbar-brand" href="./index.html">DevPhan</a>
@@ -29,39 +61,235 @@
               <a class="nav-link" href="https://www.artstation.com/phelipebatalha"  target=”_blank”>VFX / Shader</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" >Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  
-    <div id="carouselExampleIndicators" class="carousel slide "  data-bs-ride="carousel"> <!-- Carrossel-->
-      <div id="content" class="carousel-indicators ">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: rgb(0, 255, 64);"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: rgb(0, 255, 64);"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: rgb(0, 255, 64);"></button>
+    <br>
+    <br>
+    <br>
+    <h2 class= "text-center card-appear">Todos</h2>
+    <!-- Carrossel de Swiper Cards -->
+    <div id="content" class="container mt-5 pt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Card 1 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Games.html">
+                <img src="./imagens/GameProd.png" class="card-img-top" alt="Game Production">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Game Production</h5>
+                <p>Explore my game projects and ideas.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 2 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="https://www.artstation.com/phelipebatalha" target=”_blank”>
+                <img src="./imagens/VFX .png" class="card-img-top" alt="VFX and Shader">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>VFX / Shader</h5>
+                <p>Discover my visual effects and shader work.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 3 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Projects.html">
+                <img src="./imagens/PROJECT.png" class="card-img-top" alt="Projects">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Projects</h5>
+                <p>Check out my latest projects and initiatives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <div class="carousel-inner" style=>
-
-        <div class="carousel-item active">
-          <a href="Games.html"><img src="./imagens/GameProd.png" class="d-block w-100" alt="..."></a>
-        </div>
-
-        <div class="carousel-item active">
-          <a href="https://www.artstation.com/phelipebatalha"  target=”_blank”><img src="./imagens/VFX .png" class="d-block w-100" alt="..."></a>
-        </div>
-
-        <div class="carousel-item active">
-          <a href="Projects.html"><img src="./imagens/PROJECT.png" class="d-block w-100" alt="..."></a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
-        <i class="fa-solid fa-angle-right fa-flip-horizontal fa-2xl" style="color: #00ff11;"></i>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <i class="fa-solid fa-angle-left fa-flip-horizontal fa-2xl" style="color: #00ff11;"></i>
-      </button>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <h2 class= "text-center card-appear">Games</h2>
+
+
+    <!-- Swiper Projetos-->
+    <div id="content" class="container mt-5 pt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Card 1 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Games.html">
+                <img src="./Gif/Gif.gif" class="card-img-top" alt="Game Production">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Game Production</h5>
+                <p>Explore my game projects and ideas.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 2 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="https://www.artstation.com/phelipebatalha" target=”_blank”>
+                <img src="./Gif/Gif2.gif" class="card-img-top" alt="VFX and Shader">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>VFX / Shader</h5>
+                <p>Discover my visual effects and shader work.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 3 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Projects.html">
+                <img src="./Gif/Gif3.gif" class="card-img-top" alt="Projects">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Projects</h5>
+                <p>Check out my latest projects and initiatives.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Projects.html">
+                <img src="./Gif/Gif4.gif" class="card-img-top" alt="Projects">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Projects</h5>
+                <p>Check out my latest projects and initiatives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+        <h2 class= "text-center card-appear">Serious Games</h2>
+
+       <!-- Swiper Serious-->
+    <div id="content" class="container mt-5 pt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Card 1 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Games.html">
+                <img src="./Gif/Gif.gif" class="card-img-top" alt="Game Production">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Game Production</h5>
+                <p>Explore my game projects and ideas.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 2 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="https://www.artstation.com/phelipebatalha" target=”_blank”>
+                <img src="./Gif/Gif2.gif" class="card-img-top" alt="VFX and Shader">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>VFX / Shader</h5>
+                <p>Discover my visual effects and shader work.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Card 3 -->
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Projects.html">
+                <img src="./Gif/Gif3.gif" class="card-img-top" alt="Projects">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Projects</h5>
+                <p>Check out my latest projects and initiatives.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="width: 50%;">
+            <div class="Swiper_card">
+              <a href="Projects.html">
+                <img src="./Gif/Gif4.gif" class="card-img-top" alt="Projects">
+              </a>
+              <div class="Swiper_card-body">
+                <h5>Projects</h5>
+                <p>Check out my latest projects and initiatives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- Swiper JS Initialization -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    
+    
+  
     <br> 
     <h2 class= "text-center card-appear">Content</h2>
     <br>
@@ -315,6 +543,10 @@
         <a href="https://www.linkedin.com/in/phelipebatalha/" target=”_blank”>2024 Copyright Phelipe Henrique</a>
       </div>
     </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-VkGtPxN5kxSGFmy5g9UjD3a1i0z/nDRIeI7PQDl+6dZL7TV5e6T6qWqLALhpg+7P" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-QX6zzD2RbKEvbf3dMNNG4tWm6ihvsckVSfgmN/NsVNoN69FXvbk9I4kzoHMt6kOx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </body>
