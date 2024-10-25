@@ -1,4 +1,17 @@
+@media (max-width: 768px) {
+    .swiper-slide {
+      width: 100% !important; /* Cada slide ocupa 100% da largura da tela */
+    }
+    
+    /* Ocultar descrições longas em telas menores */
+    .Swiper_card-body p {
+      display: none;
+    }
 
+    #Main p {
+        display: block;
+    }
+  }
 .card-appear{
 
     animation: appear_esquerda 5s ease-in-out;
@@ -10,6 +23,7 @@
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
 }
+
 
 @keyframes appear_esquerda{
     from {
